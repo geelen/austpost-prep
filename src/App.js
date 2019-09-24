@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const env = {
+  FRAMEWORK_NAME: 'React',
+  ...window.FAB_SETTINGS
+}
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn {env.FRAMEWORK_NAME}
         </a>
       </header>
     </div>
